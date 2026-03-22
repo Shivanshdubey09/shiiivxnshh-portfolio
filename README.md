@@ -31,7 +31,7 @@ This is my personal developer portfolio built to showcase my projects, skills, a
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 - **Animations:** [Framer Motion](https://www.framer.com/motion/)
 - **Icons:** [Lucide React](https://lucide.dev/)
-- **Deployment:** Vercel (Upcoming)
+- **Deployment:** Vercel (https://shiiivxnshh-portfolio.vercel.app/)
 
 ## ✨ Features
 - 🎬 **Scrollytelling Hero Area:** Image sequence canvas tied directly to your scroll position for cinematic depth.
