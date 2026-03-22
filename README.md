@@ -16,7 +16,7 @@
   </p>
 
   <p align="center">
-    <i>Deployed Link: <kbd>[Link to be added later]</kbd></i>
+    <i>Deployed Link: <a href="https://shiiivxnshh-portfolio.vercel.app/"><strong>https://shiiivxnshh-portfolio.vercel.app/</strong></a></i>
   </p>
 </div>
 
