@@ -12,15 +12,15 @@ const roles = [
 export default function Overlay() {
   const { scrollYProgress } = useScroll();
   
-  // Opacity transforms for each text section
-  const opacity1 = useTransform(scrollYProgress, [0, 0.1, 0.15], [1, 1, 0]);
-  const y1 = useTransform(scrollYProgress, [0, 0.15], ['0%', '-30%']);
+  // Opacity transforms for each text section - Sharpened for better mobile readability
+  const opacity1 = useTransform(scrollYProgress, [0, 0.15, 0.18], [1, 1, 0]);
+  const y1 = useTransform(scrollYProgress, [0, 0.18], ['0%', '-40%']);
 
-  const opacity2 = useTransform(scrollYProgress, [0.25, 0.3, 0.5, 0.6], [0, 1, 1, 0]);
-  const y2 = useTransform(scrollYProgress, [0.25, 0.6], ['10%', '-30%']);
+  const opacity2 = useTransform(scrollYProgress, [0.25, 0.28, 0.55, 0.58], [0, 1, 1, 0]);
+  const y2 = useTransform(scrollYProgress, [0.25, 0.58], ['10%', '-40%']);
 
-  const opacity3 = useTransform(scrollYProgress, [0.65, 0.7, 0.9, 1], [0, 1, 1, 0]);
-  const y3 = useTransform(scrollYProgress, [0.65, 1], ['10%', '-30%']);
+  const opacity3 = useTransform(scrollYProgress, [0.65, 0.68, 0.95, 1], [0, 1, 1, 0]);
+  const y3 = useTransform(scrollYProgress, [0.65, 1], ['10%', '-40%']);
 
   const [roleIndex, setRoleIndex] = useState(0);
   const [text, setText] = useState("");
@@ -57,14 +57,14 @@ export default function Overlay() {
         className="sticky top-0 h-screen w-full flex flex-col items-center justify-center p-8 -mb-[100vh]"
         style={{ opacity: opacity1, y: y1 }}
       >
-        <p className="text-primary font-mono text-sm md:text-base mb-6 tracking-[0.3em] uppercase drop-shadow-xl">
+        <p className="text-primary font-mono text-sm md:text-base mb-6 tracking-[0.3em] uppercase drop-shadow-[0_4px_15px_rgba(0,0,0,0.9)]">
           {"<Hello World />"}
         </p>
-        <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-[1.1] drop-shadow-2xl text-center">
+        <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-[1.1] drop-shadow-[0_4px_25px_rgba(0,0,0,1)] text-center">
           Hi, I'm{" "}
           <span className="text-gradient">Shivansh</span>
         </h1>
-        <div className="text-xl md:text-3xl mb-8 h-10 font-display drop-shadow-xl">
+        <div className="text-xl md:text-3xl mb-8 h-10 font-display drop-shadow-[0_4px_15px_rgba(0,0,0,1)]">
           <span className="text-foreground">I'm a </span>
           <motion.span
             className="text-primary font-bold drop-shadow-md"
@@ -85,8 +85,8 @@ export default function Overlay() {
         className="sticky top-0 h-screen w-full flex items-center justify-start px-10 md:px-32 -mb-[100vh]"
         style={{ opacity: opacity2, y: y2 }}
       >
-        <h2 className="font-display text-4xl md:text-7xl font-bold text-white tracking-tighter drop-shadow-2xl max-w-2xl leading-[1.1]">
-          I build <span className="text-primary drop-shadow-[0_0_15px_hsl(var(--primary)/0.5)]">scalable</span> web apps and <span className="text-accent drop-shadow-[0_0_15px_hsl(var(--accent)/0.5)]">AI-powered</span> tools.
+        <h2 className="font-display text-4xl md:text-7xl font-bold text-white tracking-tighter drop-shadow-[0_4px_25px_rgba(0,0,0,0.8)] max-w-2xl leading-[1.1]">
+          I build <span className="text-primary drop-shadow-[0_0_15px_hsl(var(--primary)/0.6)]">scalable</span> web apps and <span className="text-accent drop-shadow-[0_0_15px_hsl(var(--accent)/0.6)]">AI-powered</span> tools.
         </h2>
       </motion.div>
 
@@ -95,8 +95,8 @@ export default function Overlay() {
         className="sticky top-0 h-screen w-full flex items-center justify-end px-10 md:px-32"
         style={{ opacity: opacity3, y: y3 }}
       >
-        <h2 className="font-display text-4xl md:text-7xl font-bold text-white tracking-tighter drop-shadow-2xl max-w-2xl text-right leading-[1.1]">
-          Passionate about the <span className="text-gradient">MERN</span> stack.
+        <h2 className="font-display text-4xl md:text-7xl font-bold text-white tracking-tighter drop-shadow-[0_4px_25px_rgba(0,0,0,0.8)] max-w-2xl text-right leading-[1.1]">
+          Passionate about the <span className="text-gradient drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]">MERN</span> stack.
         </h2>
       </motion.div>
       
