@@ -44,6 +44,7 @@ export default function ScrollyCanvas() {
     canvas.height = window.innerHeight;
 
     let animationFrameId: number;
+    let lastDrawnFrame = -1;
 
     const render = () => {
       // It's possible for frame index to go out of bounds slightly due to elastic scroll
@@ -51,8 +52,11 @@ export default function ScrollyCanvas() {
       if (frame < 0) frame = 0;
       if (frame >= FRAME_COUNT) frame = FRAME_COUNT - 1;
       
-      if (images[frame]) {
+      // OPTIMIZATION: Only draw to canvas if the frame actually changed
+      // Drawing to canvas is expensive, and doing it 60fps when not scrolling kills mobile performance
+      if (frame !== lastDrawnFrame && images[frame]) {
         drawCenterCrop(context, images[frame], canvas.width, canvas.height);
+        lastDrawnFrame = frame;
       }
       animationFrameId = requestAnimationFrame(render);
     };
