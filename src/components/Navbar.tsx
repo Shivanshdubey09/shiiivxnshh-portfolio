@@ -29,9 +29,7 @@ export default function Navbar() {
   return (
     <>
       <motion.header 
-        className={`fixed top-0 left-0 right-0 z-[100] transition-colors duration-300 ${
-          scrolled ? "bg-background/80 backdrop-blur-lg border-b border-white/5 shadow-sm" : "bg-transparent"
-        }`}
+        className="fixed top-0 left-0 right-0 z-[100] transition-colors duration-300 bg-transparent"
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}

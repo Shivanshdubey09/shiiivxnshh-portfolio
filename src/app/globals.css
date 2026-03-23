@@ -58,6 +58,9 @@
   .glow-hover {
     @apply transition-all duration-300 hover:shadow-[0_0_30px_hsl(var(--primary)/0.2)] hover:border-primary/40;
   }
+  .section-padding {
+    @apply py-20 md:py-28 scroll-mt-20;
+  }
 }
 
 @layer utilities {

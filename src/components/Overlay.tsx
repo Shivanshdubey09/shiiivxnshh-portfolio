@@ -14,13 +14,13 @@ export default function Overlay() {
   
   // Opacity transforms for each text section - Sharpened for better mobile readability
   const opacity1 = useTransform(scrollYProgress, [0, 0.15, 0.18], [1, 1, 0]);
-  const y1 = useTransform(scrollYProgress, [0, 0.18], ['0%', '-40%']);
+  const y1 = useTransform(scrollYProgress, [0, 0.18], ['0%', '-15%']);
 
   const opacity2 = useTransform(scrollYProgress, [0.25, 0.28, 0.55, 0.58], [0, 1, 1, 0]);
-  const y2 = useTransform(scrollYProgress, [0.25, 0.58], ['10%', '-40%']);
+  const y2 = useTransform(scrollYProgress, [0.25, 0.58], ['10%', '-15%']);
 
   const opacity3 = useTransform(scrollYProgress, [0.65, 0.68, 0.95, 1], [0, 1, 1, 0]);
-  const y3 = useTransform(scrollYProgress, [0.65, 1], ['10%', '-40%']);
+  const y3 = useTransform(scrollYProgress, [0.65, 1], ['10%', '-15%']);
 
   const [roleIndex, setRoleIndex] = useState(0);
   const [text, setText] = useState("");

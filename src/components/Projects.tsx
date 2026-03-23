@@ -53,7 +53,7 @@ const projects = [
       "Responsive design for all devices"
     ],
     github: "https://github.com/Shivanshdubey09",
-    liveDemo: "https://pathfinding-visualizer-demo.netlify.app",
+    liveDemo: "https://path-finding-algorithm-visualizer-eight.vercel.app/",
     image: "/pathfinding-visualizer.jpg",
     featured: false,
   },
@@ -93,10 +93,10 @@ const Projects = () => {
               >
                 {/* Top accent */}
                 <div className="h-1 w-full bg-gradient-to-r from-primary to-secondary rounded-full mb-6" />
-                
+
                 <h3 className="font-display text-xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">{project.title}</h3>
                 <p className="text-muted-foreground text-sm mb-5 leading-relaxed flex-grow">{project.description}</p>
-                
+
                 <div className="mb-5">
                   <p className="text-xs text-primary/70 mb-2 uppercase tracking-wider font-semibold">Key Features</p>
                   <ul className="space-y-1.5">
@@ -118,18 +118,18 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-3 mt-auto relative z-10">
-                  <a 
-                    href={project.github} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-semibold rounded-lg bg-transparent border border-primary text-primary hover:bg-primary/10 transition-colors"
                     onClick={(e) => e.stopPropagation()}
                   >
                     <Github size={14} /> Code
                   </a>
-                  <a 
-                    href={project.liveDemo} 
-                    target="_blank" 
+                  <a
+                    href={project.liveDemo}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-semibold rounded-lg bg-primary text-primary-foreground border border-transparent hover:bg-primary/90 transition-colors"
                     onClick={(e) => e.stopPropagation()}
@@ -146,7 +146,7 @@ const Projects = () => {
         </div>
       </section>
 
-      <ProjectModal 
+      <ProjectModal
         project={selectedProject}
         isOpen={!!selectedProject}
         onClose={() => setSelectedProject(null)}
