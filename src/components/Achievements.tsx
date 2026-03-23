@@ -13,7 +13,7 @@ const achievements = [
 
 const Achievements = () => {
   return (
-    <section className="section-padding gradient-bg bg-background z-20 relative">
+    <section id="achievements" className="section-padding gradient-bg bg-background z-20 relative">
       <div className="container mx-auto">
         <motion.div
           className="text-center mb-20"

@@ -41,13 +41,12 @@ export default function Home() {
           {/* Exact Replica Components below the scroll */}
           <div className="relative z-20 bg-background pt-20 pb-40 flex flex-col gap-32 border-t border-border flex-grow">
             <About />
-            <Education />
             <Skills />
             <Projects />
-            <GitHubSection />
             <Certifications />
             <Achievements />
-            <Training />
+            <Education />
+            <GitHubSection />
             <Contact />
           </div>
           

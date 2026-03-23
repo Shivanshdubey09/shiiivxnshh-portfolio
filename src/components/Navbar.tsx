@@ -8,9 +8,10 @@ const navLinks = [
   { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
   { name: 'Projects', href: '#projects' },
-  { name: 'Education', href: '#education' },
   { name: 'Certifications', href: '#certifications' },
-  { name: 'Training', href: '#training' },
+  { name: 'Achievements', href: '#achievements' },
+  { name: 'Education', href: '#education' },
+  { name: 'GitHub', href: '#github' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -38,7 +39,7 @@ export default function Navbar() {
         <div className="container mx-auto px-6 h-20 flex items-center justify-end md:justify-center relative">
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-10">
+          <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <a 
                 key={link.name}
