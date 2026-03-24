@@ -21,7 +21,7 @@ const projects = [
     ],
     github: "https://github.com/Shivanshdubey09",
     liveDemo: "https://examgen-ai-demo.vercel.app",
-    image: "/examgen-preview.png",
+    image: "/examgen-ai.jpg",
     featured: true,
   },
   {
@@ -36,7 +36,7 @@ const projects = [
     ],
     github: "https://github.com/Shivanshdubey09",
     liveDemo: "#",
-    image: "/agro-preview.png",
+    image: "/subhchintak-chatbot.jpg",
     featured: true,
   },
   {
@@ -54,7 +54,7 @@ const projects = [
     ],
     github: "https://github.com/Shivanshdubey09",
     liveDemo: "https://path-finding-algorithm-visualizer-eight.vercel.app/",
-    image: "/pathfinding-preview.png",
+    image: "/pathfinding-visualizer.jpg",
     featured: false,
   },
 ];
