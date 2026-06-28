@@ -90,8 +90,9 @@ const Contact = () => {
               <p className="text-muted-foreground text-sm mb-5">Get a copy of my latest resume</p>
               
               <a 
-                href="/resume.pdf" 
-                download="Shivansh_Dubey_Resume.pdf"
+                href="https://drive.google.com/file/d/1iV0tXPgj8AYlkx9NOebEUZ3HtyzAE17L/view?usp=sharing" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-2 border border-primary text-primary font-semibold rounded-lg hover:bg-primary/10 transition-all"
               >
                 Download CV
