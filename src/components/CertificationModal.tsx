@@ -65,7 +65,12 @@ const CertificationModal = ({ cert, isOpen, onClose }: CertificationModalProps) 
                   {cert.title}
                 </h2>
                 <div className="text-sm text-muted-foreground mb-2">
-                  <span className={cert.issuer === 'Coursera' ? 'text-blue-500' : 'text-purple-500'}>{cert.issuer}</span> • Verified Credential
+                  <span className={
+                    cert.issuer.toLowerCase() === 'nptel' ? 'text-amber-500' :
+                    cert.issuer.toLowerCase() === 'infosys springboard' ? 'text-blue-500' :
+                    cert.issuer.toLowerCase() === 'futurelearn' ? 'text-pink-500' :
+                    cert.issuer.toLowerCase() === 'oracle' ? 'text-red-500' : 'text-primary'
+                  }>{cert.issuer}</span> • Verified Credential
                 </div>
                 
                 <p className="text-sm text-muted-foreground/80 leading-relaxed max-w-lg">

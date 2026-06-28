@@ -40,22 +40,22 @@ const projects = [
     featured: true,
   },
   {
-    title: "Pathfinding Visualizer",
-    description: "Interactive visualization of pathfinding algorithms like Dijkstra with step-by-step animation.",
-    longDescription: "An educational pathfinding algorithm visualizer that brings algorithms to life through interactive animations. Users can watch step-by-step how different pathfinding algorithms like Dijkstra's, A*, and BFS navigate through grids to find optimal paths. The tool features customizable grid sizes, obstacle placement, and speed controls, making it perfect for students and developers learning about graph algorithms and pathfinding techniques.",
-    tech: ["JavaScript", "HTML5", "CSS3"],
+    title: "FarmDirect",
+    description: "Bulk Agribusiness & AI Marketplace connecting sustainable farms directly with commercial buyers.",
+    longDescription: "FarmDirect is a state-of-the-art, bulk agricultural B2B marketplace designed to bypass middlemen and connect farmers directly with commercial buyers (restaurants, retail chains, food processors, and exporters). Blending sleek dark mode, bento-grid modules, and glassmorphism with highly robust backend architecture, the platform features a specialized dual-role dashboard, real-time message collaboration, and an AI price assistant to optimize procurement and trading efficiency.",
+    tech: ["Laravel 11", "MongoDB", "Tailwind CSS", "PHP"],
     features: [
-      "Step-by-step algorithm visualization",
-      "Interactive grid with obstacle placement",
-      "Multiple algorithm support (Dijkstra, A*, BFS)",
-      "Adjustable animation speed",
-      "Educational tooltips and explanations",
-      "Responsive design for all devices"
+      "Dual-role specialized dashboards for Farmers & Buyers",
+      "Mandi AI Price Assistant (FarmBot) for price evaluation",
+      "Real-time chat & messaging system between buyers and farmers",
+      "Intelligent crop image engine with Unsplash fallback",
+      "Bidding system and bulk harvest negotiations",
+      "Logistics progress tracking and PDF invoice generation"
     ],
-    github: "https://github.com/Shivanshdubey09",
-    liveDemo: "https://path-finding-algorithm-visualizer-eight.vercel.app/",
-    image: "/pathfinding-visualizer.jpg",
-    featured: false,
+    github: "https://github.com/Shivanshdubey09/FarmDirect",
+    liveDemo: "https://hellofarmdirect.onrender.com/",
+    image: "/farmdirect.png",
+    featured: true,
   },
 ];
 

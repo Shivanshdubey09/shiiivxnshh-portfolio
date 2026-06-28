@@ -20,6 +20,7 @@ const skillIcons: Record<string, string> = {
   "Node.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
   "Express.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
   "Express": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+  "Laravel": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",
   ".NET": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg",
   "Apache": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg",
   "MongoDB": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
@@ -28,6 +29,9 @@ const skillIcons: Record<string, string> = {
   "Microsoft SQL Server": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg",
   "Git": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
   "GitHub": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+  "Linux": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+  "Ubuntu": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg",
+  "Manjaro": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Manjaro-logo.svg",
   "Netlify": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg",
   "Vercel": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
   "NPM": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
@@ -50,15 +54,15 @@ const skillCategories = [
   },
   {
     title: "Backend",
-    skills: ["Node.js", "Express.js", ".NET", "Apache", "JWT", "REST APIs"],
+    skills: ["Node.js", "Express.js", "Laravel", ".NET", "Apache", "JWT", "REST APIs"],
   },
   {
     title: "Database",
     skills: ["MongoDB", "MySQL", "PostgreSQL", "Microsoft SQL Server"],
   },
   {
-    title: "DevOps & Hosting",
-    skills: ["Git", "GitHub", "Netlify", "Vercel", "Render", "NPM", "Nodemon"],
+    title: "DevOps & OS",
+    skills: ["Linux", "Ubuntu", "Manjaro", "Git", "GitHub", "Netlify", "Vercel", "Render", "NPM", "Nodemon"],
   },
   {
     title: "Design & Tools",
@@ -67,7 +71,7 @@ const skillCategories = [
 ];
 
 const techStack = [
-  "React", "Node.js", "Express", "MongoDB", "JavaScript", "Tailwind CSS", "Python", "PostgreSQL", "Git", "GitHub"
+  "React", "Node.js", "Express", "Laravel", "MongoDB", "JavaScript", "Tailwind CSS", "Python", "Linux", "Git", "GitHub"
 ];
 
 const SkillBadge = ({ skill }: { skill: string }) => {
